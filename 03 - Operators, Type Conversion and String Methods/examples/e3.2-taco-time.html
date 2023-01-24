@@ -48,12 +48,50 @@
     */
 
     // define constants
+    const tacoPrice = 1.19;
+    const burritoPrice = 2.49;
+    const tax = 0.65;
+
 
     // collect input into variables
+    let tacoCount = prompt("Number of Tacos");
+    let burritoCount = prompt("Number of Burritos");
 
     // perform calculations
 
+    let subTotal_tacos = (tacoCount * tacoPrice);
+    let subTotal_burritos = (burritoCount * burritoPrice);
+
+    let subtotal = subTotal_burritos + subTotal_tacos;
+
+
+    let tacoTotal = subTotal_tacos + tax;
+    let burritoTotal = subTotal_burritos + tax;
+
+    let grandTotal = tacoTotal + burritoTotal;
+
+
     // display output
+    document.getElementById("tacoCount").innerHTML = tacoCount;
+    document.getElementById("tacoPrice").innerHTML = tacoPrice;
+    document.getElementById("tacoTotal").innerHTML = tacoTotal;
+    
+
+    document.getElementById("burritoCount").innerHTML = burritoCount;
+    document.getElementById("burritoPrice").innerHTML = burritoPrice;
+    document.getElementById("burritoTotal").innerHTML = burritoTotal;
+
+    document.getElementById("taxAmount").innerHTML = grandTotal - subtotal ;
+
+
+    document.getElementById("subTotal").innerHTML = subtotal;
+    document.getElementById("grandTotal").innerHTML = grandTotal;
+
+    
+    
+
+
+
 
 </script>
 </body>
