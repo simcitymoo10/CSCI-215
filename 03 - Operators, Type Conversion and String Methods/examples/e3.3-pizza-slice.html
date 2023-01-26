@@ -28,10 +28,17 @@
     */
 
     // collect input
+    let base = prompt("Enter the Base");
+    let height = prompt("Enter the height");
 
     // perform calculations
+    let area = (base * height)/2;
 
     // display output
+    let a = `Base: ${base}, height: ${height}, area: ${area}`;
+
+    console.log(a);
+    document.getElementById('output').innerHTML = a;
 
 </script>
 </body>
